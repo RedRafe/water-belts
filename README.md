@@ -1,2 +1,2 @@
-# water-belts
-This mod allows belts to be built on water
+# Water Belts
+Simply allows belts to be placed on water. Additional settings to allow electric poles, pipes, inserters or rails too.

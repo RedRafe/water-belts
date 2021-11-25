@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 25.11.2021
+  Features:
+    - Added option to build rails on water
+    - Added option to build roboports on water
+    - Added option to build radars on water
+    - Added option to build walls on water
+    - Added option to build turrets on water
+  Bugfixes:
+    - Fixed player walking through entities marked constructable on water
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 24.11.2021
   Info:

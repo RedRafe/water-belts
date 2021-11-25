@@ -36,6 +36,41 @@ data:extend({
     default_value = false,
     setting_type  = "startup",
     order         = "WB-110"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-rails",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-140"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-roboports",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-150"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-radars",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-155"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-walls",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-160"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-turrets",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-170"
   }
 })
 
