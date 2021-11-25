@@ -30,7 +30,8 @@ end
 -- Pipes and Underground pipes
 if settings.startup["wb-pipes"].value then 
   setRawCollisionMask("pipe",               wb.masks.default)
-  setRawCollisionMask("pipe-to-ground",     wb.masks.default)  
+  setRawCollisionMask("pipe-to-ground",     wb.masks.default)
+  setRawCollisionMask("pump",               wb.masks.default)
 end
 
 -- Inserters
@@ -75,3 +76,52 @@ if settings.startup["wb-turrets"].value then
   setRawCollisionMask("electric-turret",    wb.masks.default)
   setRawCollisionMask("artillery-turret",   wb.masks.default)
 end
+
+-- Storage
+if settings.startup["wb-storage"].value then
+  setRawCollisionMask("storage-tank",       wb.masks.default)
+  setRawCollisionMask("container",          wb.masks.default)
+  setRawCollisionMask("logistic-container", wb.masks.default)
+end
+
+-- Resources
+if settings.startup["wb-resource-gathering"].value then
+  setRawCollisionMask("mining-drill",       wb.masks.default)
+end
+
+-- Smelting
+if settings.startup["wb-smelting"].value then
+  setRawCollisionMask("furnace",            wb.masks.default)
+end
+
+-- Crafting
+if settings.startup["wb-crafting"].value then
+  setRawCollisionMask("assembling-machine", wb.masks.default)
+  setRawCollisionMask("beacon",             wb.masks.default)
+  setRawCollisionMask("lab",                wb.masks.default)
+end
+
+-- Power
+if settings.startup["wb-power"].value then
+  setRawCollisionMask("accumulator",        wb.masks.default)
+  setRawCollisionMask("generator",          wb.masks.default)
+  setRawCollisionMask("boiler",             wb.masks.default)
+  setRawCollisionMask("burner-generator",   wb.masks.default)
+  setRawCollisionMask("heat-pipe",          wb.masks.heat)
+  setRawCollisionMask("offshore-pump",      wb.masks.default)
+  setRawCollisionMask("lamp",               wb.masks.default)
+  setRawCollisionMask("reactor",            wb.masks.default)
+  setRawCollisionMask("solar-panel",        wb.masks.default)
+end
+
+-- Circuits
+if settings.startup["wb-circuits"].value then
+  setRawCollisionMask("arithmetic-combinator", wb.masks.default)
+  setRawCollisionMask("constant-combinator",   wb.masks.default)
+  setRawCollisionMask("decider-combinator",    wb.masks.default)
+  setRawCollisionMask("programmable-speaker",  wb.masks.default)
+  setRawCollisionMask("power-switch",          wb.masks.default)
+end
+
+-- ? electric-energy-interface 
+-- ? heat-interface

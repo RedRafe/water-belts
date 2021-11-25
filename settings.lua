@@ -71,6 +71,48 @@ data:extend({
     default_value = false,
     setting_type  = "startup",
     order         = "WB-170"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-storage",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-180"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-resource-gathering",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-175"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-smelting",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-190"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-crafting",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-200"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-power",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-210"
+  },
+  {
+    type          = "bool-setting",
+    name          = "wb-circuits",
+    default_value = false,
+    setting_type  = "startup",
+    order         = "WB-220"
   }
 })
 

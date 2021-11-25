@@ -26,7 +26,8 @@ wb.masks = {
   ["transport"] = {"object-layer", "floor-layer", "transport-belt-layer"},
   ["rail"]      = {"object-layer", "rail-layer", "floor-layer"}, --"item-layer"
   ["signal"]    = {"floor-layer", "rail-layer"}, --"item-layer"
-  ["gate"]      = {"object-layer", "train-layer", fist_unused_layer} --"item-layer"
+  ["gate"]      = {"object-layer", "train-layer", fist_unused_layer}, --"item-layer"
+  ["heat"]      = {"object-layer", "floor-layer"}
 }
 
 if data.raw.character.character.collision_mask then
