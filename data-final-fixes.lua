@@ -1,5 +1,3 @@
-wb.stage = "data-final-fixes"
-
 -- Shallow water 1-2
 -- fixes layer mask to behave like water but being walkable still
 if settings.startup["wb-shallow-water-compatibility"].value then

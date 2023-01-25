@@ -1,16 +1,15 @@
 ---------------------------------------------------------------------------
 -- -- -- PRE INITIALIZATION
 ---------------------------------------------------------------------------
--- General Info
+-- Mod Info
 wb                               = {} 
 wb.internal_name                 = "water-belts"
 wb.title_name                    = "Water Belts"
-wb.version                       = mods[wb.internal_name]
 wb.stage                         = "data"
 
 -- -- Global Mod paths
-require("__" .. wb.internal_name .. "__/lib/public/paths")
-require(path_private_lib .. "entity-behaviour")
+require("__" .. wb.internal_name .. "__/lib/paths")
+require(path_lib .. "entity-behaviour")
 
 ---------------------------------------------------------------------------
 -- -- -- CONTENTS INITIALIZATION (data stage)

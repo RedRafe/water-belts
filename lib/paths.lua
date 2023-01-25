@@ -4,11 +4,7 @@
 -- -- GENERIC PATHS
 path_mod                                = "__water-belts__/"
 -- Libraries
-path_public_lib                         = path_mod .. "lib/public/"
-path_private_lib                        = path_mod .. "lib/private/"
-----------------------------------------------------------------------------------------------
--- -- PROTOTYPES PATHS
-path_prototypes                         = path_mod .. "prototypes/"
+path_lib                                = path_mod .. "lib/"
 ----------------------------------------------------------------------------------------------
 -- -- COMPATIBILITY SCRIPTS PATHS
 ----------------------------------------------------------------------------------------------
