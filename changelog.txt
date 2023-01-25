@@ -2,9 +2,9 @@
 Version: 0.1.3
 Date: 25.01.2023
   Bugfixes:
-    - Fixed mask allocation to improve compatibility
+    - Fixed mask allocation to be more robust and improve compatibility
   Changes:
-    - Refactored code
+    - Refactored 99% of code
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 25.11.2021

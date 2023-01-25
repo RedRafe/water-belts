@@ -2,10 +2,10 @@
 -- -- -- PATHS
 ----------------------------------------------------------------------------------------------
 -- -- GENERIC PATHS
-path_mod                                = "__water-belts__/"
+wb_path_mod                                = "__water-belts__/"
 -- Libraries
-path_lib                                = path_mod .. "lib/"
+wb_path_lib                                = wb_path_mod .. "lib/"
 ----------------------------------------------------------------------------------------------
 -- -- COMPATIBILITY SCRIPTS PATHS
 ----------------------------------------------------------------------------------------------
-path_compatibility_scripts              = path_mod .. "compatibility/"
+wb_path_compatibility_scripts              = wb_path_mod .. "compatibility/"
