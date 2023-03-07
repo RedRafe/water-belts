@@ -9,6 +9,17 @@ local function tableContains(tableIn, element)
   return false
 end
 
+-- @ tableIn: Table
+-- @ element: string
+local function tableRemove(tableIn, element)
+  for k, v in pairs(tableIn) do -- ipairs can also be used instead of pairs
+    if v == element then
+        tableIn[k] = nil
+        break
+    end
+  end
+end
+
 -- @ parent: String
 local function isParentValid(parent)
   return (data.raw[parent] ~= nil)
@@ -17,6 +28,18 @@ end
 -- @ parent children: String
 local function isChildrenValid(parent, children)
   return (data.raw[parent][children] ~= nil)
+end
+
+-- @ parent: String
+local function getChildren(parent)
+  if not isParentValid(parent) then return {} end
+  local children = {}
+  for child, value in pairs(data.raw[parent]) do
+    if isChildrenValid(parent, child) then
+      table.insert(children, child)
+    end
+  end
+  return children
 end
 
 -- @ method: Function of [1-2] args
@@ -75,6 +98,8 @@ end
 
 if not wb.data_util then wb.data_util = {} end
 
-wb.data_util.getStartupSettingByKey = getStartupSettingByKey
-wb.data_util.applyToChildren = applyToChildren
+wb.data_util.tableRemove             = tableRemove
+wb.data_util.getChildren             = getChildren
+wb.data_util.getStartupSettingByKey  = getStartupSettingByKey
+wb.data_util.applyToChildren         = applyToChildren
 wb.data_util.applyToFilteredChildren = applyToFilteredChildren
