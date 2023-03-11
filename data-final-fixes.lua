@@ -18,6 +18,13 @@ wb.debug.log("First layer: " .. firstUnUsedLayer)
 local whitelist_NOT_layers = {}   -- item-layer, player-layer, water-tile
 local whitelist_XOR_layers = {}   -- item-layer, player-layer, water-tile, 1st unused
 local whitelist_shallow_water_tile = {}   -- remove layers: item-layer, player-layer 
+local moving_entities = {
+  "character",
+  "car",
+  "unit",
+  "unit-spawner",
+  "turret"
+}
 
 ---------------------------------------------------------------------------
 -- -- Load sartup settings
@@ -171,5 +178,10 @@ for ___, source in pairs(whitelist_XOR_layers) do
   )
 end
 
-wbmu.addLayerToCollisionMask(data.raw["character"]["character"], firstUnUsedLayer)
-
+for ___, source in pairs(moving_entities) do
+  applyToEntity(
+    wbmu.addLayerToCollisionMask,
+    source,
+    firstUnUsedLayer
+  )
+end
